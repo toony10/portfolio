@@ -55,7 +55,7 @@ const NavBar = () => {
                         <Image src={ assets.close_black } alt='' className='w-5 cursor-pointer' />
                     </button>
                     { listItems.map((item, index) => (
-                        <li key={ index } className='font-ovo'><Link href={ item.link }>{ item.name }</Link></li>
+                        <li key={ index } className='font-ovo' onClick={ closeMune }><Link href={ item.link }>{ item.name }</Link></li>
                     )) }
                 </ul>
             </nav>
