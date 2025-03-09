@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={ `${outfit.className} antialiased leading-8 overflow-x-hidden` }
+        className={ `${outfit.className} antialiased leading-8 overflow-x-hidden scroll-smooth` }
       >
         { children }
       </body>

@@ -13,10 +13,8 @@ const Header = () => {
                 Hi! I&apos;m Anton Amir <Image src={ assets.hand_icon } alt='' className='w-6' />
             </h3>
             <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Front-end web developer</h1>
-            <p className='max-w-2xl mx-auto font-ovo'>
-                Web developer specializing in JavaScript with a focus on React.js and Next.js. Expert in building responsive,
-                high-performance applications and creating seamless user interfaces with modern state management
-                tools
+            <p className='max-w-2xl mx-auto'>
+                JavaScript web developer specializing in React.js and Next.js, skilled in building responsive, high-performance applications with modern state management for seamless user experiences.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <Link href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>
