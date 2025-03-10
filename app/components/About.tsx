@@ -30,8 +30,8 @@ const About = () => {
                     <h4 className='my-6 text-gray-700 font-ovo font-semibold'>Tools I use : </h4>
                     <ul className='flex items-center gap-4 sm:gap-6'>
                         { toolsData.map((tool, index) => (
-                            <li key={ index } className='flex items-center justify-center w-12 sm:w-14 aspect-square cursor-pointer sm:border border-gray-400 rounded-lg hover:-translate-y-1 duration-500'>
-                                <Image src={ tool } alt='' className='w-5 sm:w-7' />
+                            <li key={ index } className='flex items-center justify-center sm:w-14 aspect-square cursor-pointer rounded-lg hover:-translate-y-1 duration-500'>
+                                <Image src={ tool } alt='' className='w-11 sm:w-9' />
                             </li>
                         )) }
                     </ul>
