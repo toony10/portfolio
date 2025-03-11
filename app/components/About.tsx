@@ -1,5 +1,6 @@
 import { assets, infoList, toolsData } from '@/public/assets/assets'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const About = () => {
@@ -22,7 +23,7 @@ const About = () => {
                                 <li key={ index } className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black'>
                                     <Image src={ item.icon } alt='title' className='w-7 mt-3' />
                                     <h3 className='my-4 font-semibold text-gray-700'>{ item.title }</h3>
-                                    <p className='text-gray-600 text-sm'>{ item.description }</p>
+                                    <p className='text-gray-600 text-sm'>{ item.description }{ item.link ? <Link className='font-extrabold' href={ item.link[1] }>{ item.link[0] }</Link> : "" }</p>
                                 </li>
                             )
                         ) }

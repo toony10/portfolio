@@ -35,6 +35,7 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import { link } from 'fs';
 
 export const assets = {
     user_image,
@@ -107,9 +108,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Technologies', description: 'HTML, CSS, Bootstrap, Tailwind css, ShadCN, JavaScript, React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computing and Information Technology' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Technologies', description:['HTML, CSS, Bootstrap, Tailwind css, ShadCN, JavaScript, React Js, Next Js, Redux.js, Axios'] },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computing and Information Technology - ', link: ['The Egyptian E-Learning University (EELU)','https://www.eelu.edu.eg/'] },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects using React and Next.js, including personal and work projects. Feel free to Explore them in',link: [' the next section.','/#work']}
 ];
 
 export const toolsData = [
