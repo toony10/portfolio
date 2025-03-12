@@ -10,7 +10,7 @@ const Work = () => (
             { workData.map((project, index) => (
                 <div key={ index } className="relative flex flex-col items-center justify-between text-center border border-gray-300 rounded-lg p-6 shadow-md hover:shadow-2xl transition duration-300 bg-white">
                     <Link href={ project.Live } target="_blank" rel="noopener noreferrer">
-                        <Image width={ 100 } height={ 100 } src={ project.bgImage } alt={ project.title } className="w-full h-64 object-cover rounded-lg" />
+                        <Image sizes='100vh' width={ 100 } height={ 100 } src={ project.bgImage } alt={ project.title } className="w-full h-64 object-cover rounded-lg" />
                     </Link>
                     <h3 className="text-2xl font-semibold text-gray-700 mt-4">{ project.title }</h3>
                     <p className="text-gray-600 text-sm mt-2">{ project.description }</p>
