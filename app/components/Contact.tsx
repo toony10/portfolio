@@ -9,10 +9,12 @@ import { assets } from '@/public/assets/assets';
 const Contact = () => {
     const [result, setResult] = useState("");
 
-    const onSubmit = async (event: any) => {
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         setResult("Sending....");
-        const formData = new FormData(event.target);
+
+        const formElement = event.currentTarget;
+        const formData = new FormData(formElement);
 
         formData.append("access_key", "21584879-23eb-4db7-a3ab-0355964dd6ed");
 
@@ -25,12 +27,16 @@ const Contact = () => {
 
         if (data.success) {
             setResult("Form Submitted Successfully");
-            event.target.reset();
+
+            if (formElement) {
+                formElement.reset();
+            }
         } else {
             console.log("Error", data);
             setResult(data.message);
         }
     };
+
     return (
         <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-cover bg-center'>
             <SectionHeader
