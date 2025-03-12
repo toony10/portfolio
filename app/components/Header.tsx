@@ -12,7 +12,7 @@ const Header = () => {
             <h3 className='flex items-end gap-2 text-xl md:text-2xl mb-3 font-ovo'>
                 Hi! I&apos;m Anton Amir <Image src={ assets.hand_icon } alt='' className='w-6' />
             </h3>
-            <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-ovo'>Front-end web developer</h1>
+            <h1 className='text-5xl sm:text-6xl lg:text-[66px] font-roboto font-extrabold tracking-wider text-gray-800'>Front-end web developer</h1>
             <p className='max-w-2xl mx-auto'>
                 JavaScript web developer specializing in React.js and Next.js, skilled in building responsive, high-performance applications with modern state management for seamless user experiences.
             </p>
