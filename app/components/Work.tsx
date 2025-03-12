@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
 import { workData } from '@/public/assets/assets'
-import { FaBriefcase, FaMapMarkerAlt, FaCalendarAlt } from 'react-icons/fa'
 const Work = () => (
     <div className='w-full px-[12%] py-10 scroll-mt-20'>
         <SectionHeader sm='My Work' lg='Projects' />
