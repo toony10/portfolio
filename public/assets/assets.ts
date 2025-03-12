@@ -35,6 +35,9 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import whatsApp from "./WhatsApp.png";
+import linkedIn from "./LinkedIn.png";
+import gitHub from './github.png';
 import { link } from 'fs';
 
 export const assets = {
@@ -74,13 +77,16 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    whatsApp,
+    linkedIn,
+    gitHub
 };
 
 export const workData = [
     {
         title: 'Khazanty',
-        description: 'e-commerce website for a furniture store in Saudi Arabia using Next.js.',
+        description: 'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
         bgImage: '/work-1.png',
         Live: 'https://www.khazantyksa.com/'
     },

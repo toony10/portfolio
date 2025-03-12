@@ -4,7 +4,7 @@ import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
 import { workData } from '@/public/assets/assets'
 const Work = () => (
-    <div className='w-full px-[12%] py-10 scroll-mt-20'>
+    <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <SectionHeader sm='My Work' lg='Projects' />
         <div className="mt-12 flex flex-col relative max-w-3xl mx-auto gap-6">
             { workData.map((project, index) => (
