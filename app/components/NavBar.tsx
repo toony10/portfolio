@@ -38,7 +38,7 @@ const NavBar = () => {
                 </Link>
                 <ul className={ `hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'shadow-sm bg-white/60'} bg-opacity-50` }>
                     { listItems.map((item, index) => (
-                        <li key={ index } className='font-ovo'><Link href={ item.link }>{ item.name }</Link></li>
+                        <li key={ index } className='font-roboto'><Link href={ item.link }>{ item.name }</Link></li>
                     )) }
                 </ul>
                 <div className='flex items-center gap-4'>
@@ -57,7 +57,7 @@ const NavBar = () => {
                         <Image src={ assets.close_black } alt='' className='w-5 cursor-pointer' />
                     </button>
                     { listItems.map((item, index) => (
-                        <li key={ index } className='font-ovo' onClick={ handleMenu }>
+                        <li key={ index } className='font-roboto' onClick={ handleMenu }>
                             <Link href={ item.link }>{ item.name }</Link>
                         </li>
                     )) }

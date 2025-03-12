@@ -2,13 +2,12 @@ import { assets, infoList, toolsData } from '@/public/assets/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import SectionHeader from './custom/SectionHeader'
 
 const About = () => {
     return (
         <div id='about' className='w-full px-[12%] py-10 scroll-mt-20'>
-            <h4 className='text-center mb-2 text-lg font-ovo'>Introduction</h4>
-            <h2 className='text-center text-5xl font-ovo'>About me</h2>
-
+            <SectionHeader sm='Introduction' lg='About me' />
             <div className='flex flex-col lg:flex-row w-full items-center gap-20 my-20'>
                 <div className='w-64 sm:w-80 max-w-none'>
                     <Image src={ assets.user_image } alt='user' className='w-full rounded-3xl' />

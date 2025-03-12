@@ -1,5 +1,6 @@
 import React from "react";
 import { FaBriefcase, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
+import SectionHeader from "./custom/SectionHeader";
 
 const experiences = [
     {
@@ -21,9 +22,7 @@ const experiences = [
 const Experiences = () => {
     return (
         <section id="experiences" className="w-full px-[12%] py-16 scroll-mt-20">
-            <h4 className="text-center mb-2 text-lg font-ovo">My Journey</h4>
-            <h2 className="text-center text-5xl font-ovo">Experiences</h2>
-
+            <SectionHeader sm='My Journey' lg='Experiences' />
             <div className="mt-12 flex flex-col relative max-w-3xl mx-auto">
                 <div className="absolute left-5 top-0 w-1 h-full bg-gray-300 rounded"></div>
                 { experiences.map((exp, index) => (
