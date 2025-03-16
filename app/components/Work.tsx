@@ -4,9 +4,7 @@ import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
 import { workData } from '@/public/assets/assets'
 
-interface WorkProps {
-    isDarkMode: boolean;
-}
+
 const Work = () => (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <SectionHeader sm='My Work' lg='Projects' />

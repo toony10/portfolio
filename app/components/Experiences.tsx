@@ -19,10 +19,6 @@ const experiences = [
     },
 ];
 
-interface ExperiencesProps {
-    isDarkMode: boolean;
-}
-
 const Experiences = () => {
     return (
         <section id="experiences" className="w-full px-[12%] py-16 scroll-mt-20">
