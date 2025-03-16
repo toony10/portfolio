@@ -61,10 +61,10 @@ const Contact = ({ isDarkMode }: ContactProps) => {
             </div>
             <form className='max-w-2xl mx-auto' onSubmit={ onSubmit }>
                 <div className='grid auto-cols-auto gap-6 mt-10 mb-8'>
-                    <input name='name' type="name" placeholder='Enter your name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30' required />
-                    <input name='email' type="email" placeholder='Enter your E-mail' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30' required />
+                    <input name='name' type="name" placeholder='Enter your name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white placeholder-gray-500/90 focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30 dark:placeholder-gray-50/60' required />
+                    <input name='email' type="email" placeholder='Enter your E-mail' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white placeholder-gray-500/90 focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30 dark:placeholder-gray-50/60' required />
                 </div>
-                <textarea name='message' rows={ 6 } placeholder='Enter your message' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md text-black bg-white mb-6 focus:border-black focus:shadow-xl transition duration-500 dark:text-white dark:bg-black/30 dark:border-black/30'></textarea>
+                <textarea name='message' rows={ 6 } placeholder='Enter your message' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md text-black bg-white placeholder-gray-500/90 mb-6 focus:border-black focus:shadow-xl transition duration-500 dark:text-white dark:bg-black/30 dark:border-black/30 dark:placeholder-gray-50/60'></textarea>
                 <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-black dark:bg-white dark:hover:bg-gray-800/95 dark:hover:text-white cursor-pointer'>
                     Submit Now <Image src={ isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark } alt='' className='w-4'></Image>
                 </button>

@@ -14,15 +14,25 @@ export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.theme = 'dark'
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.theme = ''
+    const storedTheme = localStorage.getItem("theme");
 
+    if (storedTheme) {
+      setIsDarkMode(storedTheme === "dark");
+    } else {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDarkMode(prefersDark);
     }
-  }, [isDarkMode])
+  }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
+    }
+  }, [isDarkMode]);
   return (
     <div>
       <NavBar isDarkMode={ isDarkMode } setIsDarkMode={ setIsDarkMode } />
