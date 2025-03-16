@@ -7,7 +7,7 @@ import { workData } from '@/public/assets/assets'
 interface WorkProps {
     isDarkMode: boolean;
 }
-const Work = ({ isDarkMode }: WorkProps) => (
+const Work = () => (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <SectionHeader sm='My Work' lg='Projects' />
         <div className="mt-12 flex flex-col relative max-w-3xl mx-auto gap-6">

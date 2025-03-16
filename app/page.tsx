@@ -26,10 +26,10 @@ export default function Home() {
   return (
     <div>
       <NavBar isDarkMode={ isDarkMode } setIsDarkMode={ setIsDarkMode } />
-      <Header isDarkMode={ isDarkMode } />
+      <Header />
       <About isDarkMode={ isDarkMode } />
-      <Experiences isDarkMode={ isDarkMode } />
-      <Work isDarkMode={ isDarkMode } />
+      <Experiences />
+      <Work />
       <Contact isDarkMode={ isDarkMode } />
       <Footer isDarkMode={ isDarkMode } />
     </div>

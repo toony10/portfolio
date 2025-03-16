@@ -7,7 +7,7 @@ interface HeaderProps {
     isDarkMode: boolean
 }
 
-const Header = ({ isDarkMode }: HeaderProps) => {
+const Header = () => {
     return (
         <div className='w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4'>
             <div>

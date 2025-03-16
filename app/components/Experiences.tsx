@@ -23,7 +23,7 @@ interface ExperiencesProps {
     isDarkMode: boolean;
 }
 
-const Experiences = ({ isDarkMode }: ExperiencesProps) => {
+const Experiences = () => {
     return (
         <section id="experiences" className="w-full px-[12%] py-16 scroll-mt-20">
             <SectionHeader sm='My Journey' lg='Experiences' />
