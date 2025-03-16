@@ -17,11 +17,11 @@ const Header = () => {
                 JavaScript web developer specializing in React.js and Next.js, skilled in building responsive, high-performance applications with modern state management for seamless user experiences.
             </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
-                <Link href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'>
+                <Link href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 dark:bg-black/50'>
                     Contact me <Image src={ assets.right_arrow_white } alt='' className='w-4' />
                 </Link>
 
-                <Link href="/Anton_Amir_cv.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2">
+                <Link href="/Anton_Amir_cv.pdf" download className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 transition duration-500 dark:hover:bg-black/20">
                     My resume <Image src={ assets.download_icon } alt='' className='w-4' />
                 </Link>
             </div>

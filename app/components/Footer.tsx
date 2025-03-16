@@ -10,9 +10,9 @@ interface FooterProps {
 const Footer = ({ isDarkMode }: FooterProps) => {
     return (
         <div className='mt-20'>
-            <div className='text-center'>
+            <Link href='/' className='text-center'>
                 <Image src={ isDarkMode ? assets.logo_dark : assets.logo } alt='' className='w-36 mx-auto mb-2' />
-            </div>
+            </Link>
             <Link href='mailto:amiranton257@gmail.com' className='w-max flex items-center mx-auto gap-3'>
                 <Image src={ isDarkMode ? assets.mail_icon_dark : assets.mail_icon } alt='' className='w-6' />
                 <p>amiranton257@gmail.com</p>
