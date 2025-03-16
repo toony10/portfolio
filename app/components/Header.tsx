@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { assets } from '../../public/assets/assets'
 import React from 'react'
-import Link from 'next/link'
 import { motion } from 'motion/react'
 
 interface NavBarProps {
