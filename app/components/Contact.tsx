@@ -5,8 +5,10 @@ import Image from 'next/image';
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { assets } from '@/public/assets/assets';
 
-
-const Contact = () => {
+interface ContactProps {
+    isDarkMode: boolean;
+}
+const Contact = ({ isDarkMode }: ContactProps) => {
     const [result, setResult] = useState("");
 
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -38,7 +40,7 @@ const Contact = () => {
     };
 
     return (
-        <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] bg-cover bg-center'>
+        <div id='contact' className='w-full px-[12%] py-10 scroll-mt-20 bg-[url("/footer-bg-color.png")] dark:bg-none bg-cover bg-center'>
             <SectionHeader
                 sm="Connect with me"
                 lg="Get in touch"
@@ -54,17 +56,17 @@ const Contact = () => {
                 </Link>
 
                 <Link href='https://github.com/toony10' target="_blank" className='max-w-2xl'>
-                    <FaGithub size={ 50 } className='text-[#1a1e22] hover:-translate-y-1 transform duration-500' />
+                    <FaGithub size={ 50 } className='text-[#1a1e22] dark:text-[#fff] hover:-translate-y-1 transform duration-500' />
                 </Link>
             </div>
             <form className='max-w-2xl mx-auto' onSubmit={ onSubmit }>
                 <div className='grid auto-cols-auto gap-6 mt-10 mb-8'>
-                    <input name='name' type="name" placeholder='Enter your name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500' required />
-                    <input name='email' type="email" placeholder='Enter your E-mail' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500' required />
+                    <input name='name' type="name" placeholder='Enter your name' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30' required />
+                    <input name='email' type="email" placeholder='Enter your E-mail' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white focus:border-black focus:shadow-xl transition duration-500 dark:bg-black/30 dark:border-black/30' required />
                 </div>
-                <textarea name='message' rows={ 6 } placeholder='Enter your message' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6  focus:border-black focus:shadow-xl transition duration-500'></textarea>
-                <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500'>
-                    Submit Now <Image src={ assets.right_arrow_white } alt='' className='w-4'></Image>
+                <textarea name='message' rows={ 6 } placeholder='Enter your message' className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md text-black bg-white mb-6 focus:border-black focus:shadow-xl transition duration-500 dark:text-white dark:bg-black/30 dark:border-black/30'></textarea>
+                <button type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-black dark:bg-white dark:hover:bg-gray-800/95 dark:hover:text-white cursor-pointer'>
+                    Submit Now <Image src={ isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark } alt='' className='w-4'></Image>
                 </button>
                 <p>{ result }</p>
             </form>

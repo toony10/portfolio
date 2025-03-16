@@ -9,16 +9,9 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { useEffect, useState } from "react";
 
+
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-
-  useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      setIsDarkMode(true)
-    } else {
-      setIsDarkMode(false)
-    }
-  }, [])
 
   useEffect(() => {
     if (isDarkMode) {
@@ -32,13 +25,13 @@ export default function Home() {
   }, [isDarkMode])
   return (
     <div>
-      <NavBar />
-      <Header />
-      <About />
-      <Experiences />
-      <Work />
-      <Contact />
-      <Footer />
+      <NavBar isDarkMode={ isDarkMode } setIsDarkMode={ setIsDarkMode } />
+      <Header isDarkMode={ isDarkMode } />
+      <About isDarkMode={ isDarkMode } />
+      <Experiences isDarkMode={ isDarkMode } />
+      <Work isDarkMode={ isDarkMode } />
+      <Contact isDarkMode={ isDarkMode } />
+      <Footer isDarkMode={ isDarkMode } />
     </div>
   );
 }
