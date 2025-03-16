@@ -1,7 +1,7 @@
 import React from "react";
 import { FaBriefcase, FaMapMarkerAlt, FaCalendarAlt } from "react-icons/fa";
 import SectionHeader from "./custom/SectionHeader";
-
+import { motion } from 'motion/react';
 const experiences = [
     {
         title: "Freelance React.js Developer",
@@ -27,10 +27,18 @@ const Experiences = () => {
                 <div className="absolute left-5 top-0 w-1 h-full bg-gray-300 rounded dark:bg-white/80"></div>
                 { experiences.map((exp, index) => (
                     <div key={ index } className="relative flex items-start gap-6 mb-10">
-                        <div className="w-10 h-10 bg-blue-500 dark:bg-white text-white dark:text-black/80 flex items-center justify-center rounded-full shadow-md relative z-10">
+                        <motion.div
+                            initial={ { scale: 0 } }
+                            whileInView={ { scale: 1 } }
+                            transition={ { duration: 0.6 } }
+                            className="w-10 h-10 bg-blue-500 dark:bg-white text-white dark:text-black/80 flex items-center justify-center rounded-full shadow-md relative z-10">
                             <FaBriefcase size={ 20 } />
-                        </div>
-                        <div className="border border-gray-300 dark:border-none rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 flex-1 bg-white dark:bg-black/20">
+                        </motion.div>
+                        <motion.div
+                            initial={ { x: 25, opacity: 0 } }
+                            whileInView={ { x: 0, opacity: 1 } }
+                            transition={ { duration: 0.8, type: 'keyframes', delay: 0.2 } }
+                            className="border border-gray-300 dark:border-none rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 flex-1 bg-white dark:bg-black/20">
                             <h3 className="text-2xl font-semibold text-gray-700 dark:text-white">{ exp.title }</h3>
                             <div className="flex items-center gap-4 text-gray-600 text-sm mt-2">
                                 <span className="flex items-center gap-2 dark:text-white/85">
@@ -41,7 +49,7 @@ const Experiences = () => {
                                 </span>
                             </div>
                             <p className="mt-4 text-gray-600 text-sm dark:text-white">{ exp.description }</p>
-                        </div>
+                        </motion.div>
                     </div>
                 )) }
             </div>

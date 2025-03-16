@@ -3,12 +3,16 @@ import Link from 'next/link'
 import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
 import { workData } from '@/public/assets/assets'
-
+import { motion } from 'motion/react'
 
 const Work = () => (
     <div id='work' className='w-full px-[12%] py-10 scroll-mt-20'>
         <SectionHeader sm='My Work' lg='Projects' />
-        <div className="mt-12 flex flex-col relative max-w-3xl mx-auto gap-6">
+        <motion.div
+            initial={ { y: -30 } }
+            whileInView={ { y: 0 } }
+            transition={ { duration: 0.7 } }
+            className="mt-12 flex flex-col relative max-w-3xl mx-auto gap-6">
             { workData.map((project, index) => (
                 <div key={ index } className="relative flex flex-col items-center justify-between text-center border border-gray-300 rounded-lg p-6 shadow-md hover:shadow-2xl transition duration-300 bg-white">
                     <Link href={ project.Live } target="_blank" rel="noopener noreferrer">
@@ -28,7 +32,7 @@ const Work = () => (
                     </div>
                 </div>
             )) }
-        </div>
+        </motion.div>
     </div>
 )
 
