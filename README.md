@@ -9,5 +9,5 @@ my name is Anton, and this is my portfolio repo feel free to explore or use the 
  - [Fremer-Motion](https://motion.dev/)
 
 
-you can explore the [Live](https://portfolio-fawn-omega-78.vercel.app/)
+you can explore the [Live](https://anton-web-gold.vercel.app/)
 
