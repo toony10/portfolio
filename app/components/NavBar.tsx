@@ -50,7 +50,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }: NavBarProps) => {
                     <button className='cursor-pointer focus:border-none' onClick={ () => setIsDarkMode(prev => !prev) }>
                         <Image src={ isDarkMode ? assets.sun_icon : assets.moon_icon } alt='' className='w-7 hover:rotate-270 transition duration-500' />
                     </button>
-                    <Link href="#contact" className='hidden lg:flex items-center gap-3 px-8 py-2.5 rounded-full border border-gray-500 ml-4 hover:bg-gray-300/50 transition duration-500'>Contact<Image src={ assets.arrow_icon } className='w-3' alt='Contact' /></Link>
+                    <Link href="#contact" className='hidden lg:flex items-center gap-3 px-8 py-2.5 rounded-full border border-gray-500 ml-4 hover:bg-gray-300/50 transition duration-500'>Contact<Image src={ isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon } className='w-3' alt='Contact' /></Link>
                     <button onClick={ handleMenu } className='block md:hidden ml-3 cursor-pointer'>
                         <Image src={ isDarkMode ? assets.menu_white : assets.menu_black } alt='' className='w-6' />
                     </button>
