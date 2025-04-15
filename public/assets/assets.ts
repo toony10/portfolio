@@ -97,7 +97,7 @@ export const workData = [
 
 export const infoList = [
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor of Computing and Information Technology - ', link: ['The Egyptian E-Learning University (EELU)','https://www.eelu.edu.eg/'] },
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Technologies', description:['HTML, CSS, Bootstrap, Tailwind css, ShadCN, JavaScript, React Js, Next Js, Redux.js, Axios'] },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages & Technologies', description:['HTML, CSS, Bootstrap, Tailwind css, ShadCN, JavaScript, React Js, Next Js, Redux.js, SQL, ORM(Prisma)'] },
     { icon: assets.skill_icon, iconDark: assets.skill_icon_dark, title: 'Skills', description: 'Hardworking, Detail oriented, Effective Communication, Time Management, Problem Solving and Creativity, Continuous Learning',}
 ];
 
