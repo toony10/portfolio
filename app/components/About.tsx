@@ -48,7 +48,7 @@ const About = ({ isDarkMode }: AboutProps) => {
                                     key={ index } className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-gray-100 hover:-translate-y-1 duration-500 dark:hover:bg-black/30 dark:hover:shadow-gray-400 hover:shadow-md'>
                                     <Image src={ isDarkMode ? item.iconDark : item.icon } alt='title' className='w-9 ' />
                                     <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{ item.title }</h3>
-                                    <p className='text-gray-600 text-sm dark:text-white/70'>{ item.description }{ item.link ? <Link className='font-extrabold dark:text-white/90' href={ item.link[1] }>{ item.link[0] }</Link> : "" }</p>
+                                    <p className='text-gray-600 text-sm dark:text-white/70 max-h-28 overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500'>{ item.description }{ item.link ? <Link className='font-extrabold dark:text-white/90' href={ item.link[1] }>{ item.link[0] }</Link> : "" }</p>
                                 </motion.li>
                             )
                         ) }
