@@ -25,7 +25,7 @@ const Work = () => (
                             href={ project.Live }
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-4 px-6 py-2 bg-green-500 dark:bg-[#1e8449] text-white rounded-full shadow-md hover:bg-green-700 transition-all"
+                            className="mt-4 px-6 py-2 bg-green-500 dark:bg-[#4a90e2] text-white rounded-full shadow-md hover:bg-green-700 hover:dark:bg-[#357abd] transition-all"
                         >
                             View Live
                         </Link>
