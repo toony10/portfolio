@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { assets } from '@/public/assets/assets';
 import { motion } from 'motion/react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 
 interface ContactProps {
     isDarkMode: boolean;
@@ -57,16 +59,46 @@ const Contact = ({ isDarkMode }: ContactProps) => {
                 transition={ { duration: 0.6 } }
                 className=" flex m-auto items-center gap-10 justify-center mb-7">
                 <Link href='http://linkedin.com/in/anton-amir' target="_blank" className='max-w-2xl'>
-                    <FaLinkedin size={ 50 } className='text-[#0c64c5] hover:-translate-y-1 transform duration-500' />
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <FaLinkedin size={ 50 } className='text-[#0c64c5] hover:-translate-y-1 transform duration-500' />
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p className='font-bold'>anton-amir</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
                 </Link>
 
                 <Link href='https://wa.link/svnje1' target="_blank" className='max-w-2xl'>
-                    <FaWhatsapp size={ 50 } className='text-[#4bc658] hover:-translate-y-1 transform duration-500' />
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <FaWhatsapp size={ 50 } className='text-[#4bc658] hover:-translate-y-1 transform duration-500' />
+                            </TooltipTrigger>
+
+                            <TooltipContent >
+                                <p className='font-bold'>+201019020642</p>
+                            </TooltipContent>
+
+                        </Tooltip>
+                    </TooltipProvider>
                 </Link>
 
                 <Link href='https://github.com/toony10' target="_blank" className='max-w-2xl'>
-                    <FaGithub size={ 50 } className='text-[#1a1e22] dark:text-[#fff] hover:-translate-y-1 transform duration-500' />
+                    <TooltipProvider>
+                        <Tooltip>
+                            <TooltipTrigger asChild>
+                                <FaGithub size={ 50 } className='text-[#1a1e22] dark:text-[#fff] hover:-translate-y-1 transform duration-500' />
+                            </TooltipTrigger>
+                            <TooltipContent>
+                                <p className='font-bold'>toony10</p>
+                            </TooltipContent>
+                        </Tooltip>
+                    </TooltipProvider>
                 </Link>
+
             </motion.div>
             <motion.form
                 initial={ { opacity: 0 } }

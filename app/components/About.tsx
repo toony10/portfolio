@@ -4,6 +4,8 @@ import Link from 'next/link'
 import React from 'react'
 import SectionHeader from './custom/SectionHeader'
 import { motion } from 'motion/react';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import { Button } from '@/components/ui/button'
 interface AboutProps {
     isDarkMode: boolean
 }
@@ -57,7 +59,16 @@ const About = ({ isDarkMode }: AboutProps) => {
                     <ul className='flex items-center gap-4 sm:gap-6 text-center justify-center md:justify-start'>
                         { toolsData.map((tool, index) => (
                             <li key={ index } className='flex items-center justify-center sm:w-14 aspect-square cursor-pointer rounded-lg hover:-translate-y-1 duration-500'>
-                                <Image src={ tool } alt='' className='w-11 sm:w-9' />
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Image src={ tool.icon } alt='' className='w-11 sm:w-9' />
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p className='font-bold'>{ tool.name }</p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             </li>
                         )) }
                     </ul>

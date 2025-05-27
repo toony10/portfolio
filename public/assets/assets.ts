@@ -6,7 +6,7 @@ import edu_icon_dark from './edu-icon-dark.png';
 import skill_icon from './skill-icon.png';
 import skill_icon_dark from './skill-icon-dark.png';
 import vscode from './vscode.png';
-import firebase from './firebase.png';
+import supabase from './supabase.png';
 import figma from './figma.png';
 import git from './git.png';
 import postMan from './postMan.png';
@@ -47,7 +47,7 @@ export const assets = {
   skill_icon,
   skill_icon_dark,
   vscode,
-  firebase,
+  supabase,
   figma,
   git,
   postMan,
@@ -121,4 +121,21 @@ export const infoList = [
   },
 ];
 
-export const toolsData = [assets.vscode, assets.firebase, assets.postMan, assets.git];
+export const toolsData = [
+  {
+    name: 'VS Code',
+    icon: assets.vscode,
+  },
+  {
+    name: 'Supabase',
+    icon: assets.supabase,
+  },
+  {
+    name: 'Postman',
+    icon: assets.postMan,
+  },
+  {
+    name: 'Git',
+    icon: assets.git,
+  },
+];
