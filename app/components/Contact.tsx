@@ -6,17 +6,18 @@ import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { assets } from '@/public/assets/assets';
 import { motion } from 'motion/react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import Loader from './custom/Loader';
 
 interface ContactProps {
     isDarkMode: boolean;
 }
 const Contact = ({ isDarkMode }: ContactProps) => {
-    const [result, setResult] = useState("");
+    const [result, setResult] = useState<null | string>(null);
+    const [pending, setPending] = useState(false);
 
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setResult("Sending....");
-
+        setPending(true)
         const formElement = event.currentTarget;
         const formData = new FormData(formElement);
 
@@ -30,7 +31,7 @@ const Contact = ({ isDarkMode }: ContactProps) => {
         const data = await response.json();
 
         if (data.success) {
-            setResult("Form Submitted Successfully");
+            setResult("Thank you for reaching out! Your message has been successfully sent. I’ll get back to you as soon as possible.");
 
             if (formElement) {
                 formElement.reset();
@@ -39,6 +40,7 @@ const Contact = ({ isDarkMode }: ContactProps) => {
             console.log("Error", data);
             setResult(data.message);
         }
+        setPending(false)
     };
 
     return (
@@ -124,10 +126,22 @@ const Contact = ({ isDarkMode }: ContactProps) => {
                 <motion.button
                     whileHover={ { scale: 1.05 } }
                     transition={ { duration: 0.3 } }
+                    disabled={ pending }
                     type='submit' className='py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:text-black dark:bg-white dark:hover:bg-gray-800/95 dark:hover:text-white cursor-pointer'>
-                    Submit Now <Image src={ isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark } alt='' className='w-4'></Image>
+                    { pending ? '' : 'Submit' }
+                    { pending ? < Loader /> : <Image src={ isDarkMode ? assets.right_arrow_bold : assets.right_arrow_bold_dark } alt='' className='w-4'></Image> }
                 </motion.button>
-                <p>{ result }</p>
+                {
+                    result &&
+                    <motion.p
+                        initial={ { y: 50, opacity: 0 } }
+                        whileInView={ { y: 0, opacity: 1 } }
+                        transition={ { duration: 1 } }
+                        className='text-center bg-green-400 mt-10 rounded-lg text-gray-900 text-lg p-5 relative'>
+                        { result }
+                        <button onClick={ () => setResult(null) } className='absolute bottom-2 right-2 bg-white font-bold p-1 rounded-lg w-20 cursor-pointer'>OK</button>
+                    </motion.p>
+                }
             </motion.form>
         </motion.div>
     )
