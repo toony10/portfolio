@@ -6,7 +6,6 @@ import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { assets } from '@/public/assets/assets';
 import { motion } from 'motion/react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
-import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 
 interface ContactProps {
     isDarkMode: boolean;

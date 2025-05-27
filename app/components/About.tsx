@@ -5,7 +5,6 @@ import React from 'react'
 import SectionHeader from './custom/SectionHeader'
 import { motion } from 'motion/react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { Button } from '@/components/ui/button'
 interface AboutProps {
     isDarkMode: boolean
 }
