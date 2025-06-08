@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { assets } from '../../assets'
+import { assets } from '../../assets/assets'
 
 const listItems = [
     { name: 'Home', link: '#top' },
