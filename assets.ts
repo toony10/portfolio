@@ -8,9 +8,11 @@ import skill_icon_dark from './skill-icon-dark.png';
 import vscode from './vscode.png';
 import cursor from './cursor.png';
 import supabase from './supabase.png';
-import figma from './figma.png';
 import git from './git.png';
 import postMan from './postMan.png';
+import work1 from './work-1.png';
+import work2 from './work-2.png';
+import work3 from './work-3.png';
 import right_arrow_white from './right-arrow-white.png';
 import logo from './logo.png';
 import logo_dark from './logo_dark.png';
@@ -50,9 +52,11 @@ export const assets = {
   vscode,
   cursor,
   supabase,
-  figma,
   git,
   postMan,
+  work1,
+  work2,
+  work3,
   right_arrow_white,
   logo,
   logo_dark,
@@ -86,21 +90,21 @@ export const workData = [
     title: 'Travel Advisor',
     description:
       "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
-    bgImage: '/work-1.PNG',
+    bgImage: work1,
     Live: 'https://travele-advisor.vercel.app/',
   },
   {
     title: 'Hadarah',
     description:
       'website about ancient Egyptian life and Pharaonic civilization using Next.js and Tailwind CSS. Designed for easy navigation and clear information presentation as a graduation project for the Faculty of Archaeology',
-    bgImage: '/work-2.PNG',
+    bgImage: work2,
     Live: 'https://hadhara-mfv5.vercel.app/',
   },
   {
     title: 'Khazanty',
     description:
       'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
-    bgImage: '/work-3.PNG',
+    bgImage: work3,
     Live: 'https://www.khazantyksa.com/',
   },
 ];

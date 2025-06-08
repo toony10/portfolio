@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { assets } from '../../public/assets/assets'
+import { assets } from '../../assets'
 
 const listItems = [
     { name: 'Home', link: '#top' },
@@ -37,11 +37,11 @@ const NavBar = ({ isDarkMode, setIsDarkMode }: NavBarProps) => {
             <div className='fixed top-0 right-0 -z-10 translate-y-[-80%] dark:hidden'>
                 <Image src={ assets.header_bg_color } alt='' className='w-full' />
             </div>
-            <nav className={ `flex fixed px-5 lg:px8 xl:px-[8%] py-4 items-center justify-between w-full z-50 transition duration-500 ${isScroll ? 'bg-white/60 backdrop-blur-lg shadow-md dark:bg-darkTheme/80' : ''}` }>
+            <nav className={ `flex fixed px-5 lg:px8 xl:px-[8%] py-4 items-center justify-between w-full z-50 transition duration-500 ${ isScroll ? 'bg-white/60 backdrop-blur-lg shadow-md dark:bg-darkTheme/80' : '' }` }>
                 <Link href="/">
                     <Image src={ isDarkMode ? assets.logo_dark : assets.logo } alt="logo" className="w-40 m-6" />
                 </Link>
-                <ul className={ `hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${isScroll ? '' : 'shadow-sm bg-white/60 dark:bg-gray-600/60'} bg-opacity-50 transition duration-500 text-black/80 dark:text-white/70` }>
+                <ul className={ `hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${ isScroll ? '' : 'shadow-sm bg-white/60 dark:bg-gray-600/60' } bg-opacity-50 transition duration-500 text-black/80 dark:text-white/70` }>
                     { listItems.map((item, index) => (
                         <li key={ index } className='font-roboto hover:text-black dark:hover:text-white'><Link href={ item.link }>{ item.name }</Link></li>
                     )) }
@@ -59,7 +59,7 @@ const NavBar = ({ isDarkMode, setIsDarkMode }: NavBarProps) => {
                 {/* mobile menu */ }
                 <ul className={ `flex md:hidden flex-col gap-4 py-20 px-10 fixed top-0 right-0 h-screen w-64 z-50 
     bg-gray-100 dark:bg-darkTheme shadow-md transition-transform duration-300 
-    ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}` }>
+    ${ isMenuOpen ? 'translate-x-0' : 'translate-x-full' }` }>
                     <button className='absolute top-6 right-6' onClick={ handleMenu }>
                         <Image src={ isDarkMode ? assets.close_white : assets.close_black } alt='' className='w-5 cursor-pointer' />
                     </button>

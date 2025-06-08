@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
-import { workData } from '@/public/assets/assets'
+import { workData } from '@/assets'
 import { motion } from 'motion/react'
 
 const Work = () => (

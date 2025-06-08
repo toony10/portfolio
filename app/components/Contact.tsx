@@ -3,7 +3,7 @@ import SectionHeader from './custom/SectionHeader'
 import Link from 'next/link'
 import Image from 'next/image';
 import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
-import { assets } from '@/public/assets/assets';
+import { assets } from '@/assets';
 import { motion } from 'motion/react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 import Loader from './custom/Loader';

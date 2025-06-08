@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { assets } from '../../public/assets/assets'
+import { assets } from '../../assets'
 import React from 'react'
 import { motion } from 'motion/react'
 

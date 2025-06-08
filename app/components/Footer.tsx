@@ -1,4 +1,4 @@
-import { assets } from '@/public/assets/assets'
+import { assets } from '@/assets'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
