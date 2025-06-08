@@ -6,6 +6,7 @@ import edu_icon_dark from './edu-icon-dark.png';
 import skill_icon from './skill-icon.png';
 import skill_icon_dark from './skill-icon-dark.png';
 import vscode from './vscode.png';
+import cursor from './cursor.png';
 import supabase from './supabase.png';
 import figma from './figma.png';
 import git from './git.png';
@@ -47,6 +48,7 @@ export const assets = {
   skill_icon,
   skill_icon_dark,
   vscode,
+  cursor,
   supabase,
   figma,
   git,
@@ -132,6 +134,10 @@ export const toolsData = [
   {
     name: 'VS Code',
     icon: assets.vscode,
+  },
+  {
+    name: 'Cursor',
+    icon: assets.cursor,
   },
   {
     name: 'Supabase',
