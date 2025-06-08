@@ -81,18 +81,25 @@ export const assets = {
 
 export const workData = [
   {
-    title: 'Khazanty',
+    title: 'Travel Advisor',
     description:
-      'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
+      "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
     bgImage: '/work-1.png',
-    Live: 'https://www.khazantyksa.com/',
+    Live: 'https://travele-advisor.vercel.app/',
   },
   {
     title: 'Hadarah',
     description:
       'website about ancient Egyptian life and Pharaonic civilization using Next.js and Tailwind CSS. Designed for easy navigation and clear information presentation as a graduation project for the Faculty of Archaeology',
-    bgImage: '/work-2.png',
+    bgImage: '/work-3.png',
     Live: 'https://hadhara-mfv5.vercel.app/',
+  },
+  {
+    title: 'Khazanty',
+    description:
+      'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
+    bgImage: '/work-2.png',
+    Live: 'https://www.khazantyksa.com/',
   },
 ];
 
