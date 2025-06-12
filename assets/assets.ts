@@ -29,7 +29,6 @@ import menu_black from './menu-black.png';
 import menu_white from './menu-white.png';
 import close_black from './close-black.png';
 import close_white from './close-white.png';
-import ui_icon from './ui-icon.png';
 import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
@@ -37,7 +36,6 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import whatsApp from './WhatsApp.png';
 import linkedIn from './LinkedIn.png';
 import gitHub from './github.png';
-import { link } from 'fs';
 
 export const assets = {
   user_image,
@@ -71,7 +69,6 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  ui_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
@@ -82,6 +79,13 @@ export const assets = {
 };
 
 export const workData = [
+  {
+    title: 'Tona E-commerce (in Progress)',
+    description:
+      'Tona E-commerce is a modern online fashion store designed to offer a seamless and stylish shopping experience for users interested in clothing and everything related to fashion. The platform is built using Next.js, providing server-side rendering and optimized performance, while Supabase handles authentication and database services to ensure secure and efficient data management. Tailwind CSS is used to create a responsive and visually appealing user interface, and TypeScript adds type safety and reliability to the codebase. For state management, the project utilizes Zustand, allowing for a simple yet powerful way to handle global state. Tona combines clean design with robust functionality, making it a reliable destination for users to explore and purchase the latest fashion trends online.',
+    bgImage: '/work-4.PNG',
+    Live: 'https://tona-ecommerce-kappa.vercel.app/',
+  },
   {
     title: 'Travel Advisor',
     description:
