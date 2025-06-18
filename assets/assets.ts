@@ -36,7 +36,14 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import whatsApp from './WhatsApp.png';
 import linkedIn from './LinkedIn.png';
 import gitHub from './github.png';
-
+import next from './next.png';
+import typescript from './typescript.png';
+import tailwind from './talwind.png';
+import shadcn from './shadcn.png';
+import zustand from './zustand.png';
+import react from './react.png';
+import google from './google.png';
+import emailjs from './emailjs.png';
 export const assets = {
   user_image,
   code_icon,
@@ -84,26 +91,97 @@ export const workData = [
     description:
       'Tona E-commerce is a modern online fashion store designed to offer a seamless and stylish shopping experience for users interested in clothing and everything related to fashion. The platform is built using Next.js, providing server-side rendering and optimized performance, while Supabase handles authentication and database services to ensure secure and efficient data management. Tailwind CSS is used to create a responsive and visually appealing user interface, and TypeScript adds type safety and reliability to the codebase. For state management, the project utilizes Zustand, allowing for a simple yet powerful way to handle global state. Tona combines clean design with robust functionality, making it a reliable destination for users to explore and purchase the latest fashion trends online.',
     bgImage: '/work-4.PNG',
+    tech: [
+      {
+        img: next,
+        title: 'Next.js',
+      },
+      {
+        img: typescript,
+        title: 'TypeScript',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+      {
+        img: shadcn,
+        title: 'Shadcn UI',
+      },
+      {
+        img: zustand,
+        title: 'Zustand',
+      },
+    ],
     Live: 'https://tona-ecommerce-kappa.vercel.app/',
+    code: 'https://github.com/toony10/tona-ecommerce',
   },
   {
     title: 'Travel Advisor',
     description:
       "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
+    tech: [
+      {
+        img: react,
+        title: 'Reactjs',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+      {
+        img: google,
+        title: 'Google Maps API',
+      },
+    ],
     bgImage: '/work-1.PNG',
     Live: 'https://travele-advisor.vercel.app/',
+    code: 'https://github.com/toony10/Travele-advisor',
   },
   {
     title: 'Hadarah',
     description:
       'website about ancient Egyptian life and Pharaonic civilization using Next.js and Tailwind CSS. Designed for easy navigation and clear information presentation as a graduation project for the Faculty of Archaeology',
     bgImage: '/work-2.PNG',
+    tech: [
+      {
+        img: next,
+        title: 'Next.js',
+      },
+      {
+        img: typescript,
+        title: 'TypeScript',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+      {
+        img: emailjs,
+        title: 'EmailJs',
+      },
+    ],
     Live: 'https://hadhara-mfv5.vercel.app/',
+    code: 'https://github.com/toony10/hadhara',
   },
   {
     title: 'Khazanty',
     description:
       'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
+    tech: [
+      {
+        img: next,
+        title: 'Next.js',
+      },
+      {
+        img: typescript,
+        title: 'TypeScript',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+    ],
     bgImage: '/work-3.PNG',
     Live: 'https://www.khazantyksa.com/',
   },
