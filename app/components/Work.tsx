@@ -6,8 +6,7 @@ import { workData } from '@/assets/assets'
 import { motion } from 'motion/react'
 import { FaGithub } from "react-icons/fa"
 import { MdLiveTv, MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md"
-import { SiNextdotjs } from "react-icons/si";
-// import { Button } from "@/components/ui/button"
+
 import {
     Tooltip,
     TooltipContent,
