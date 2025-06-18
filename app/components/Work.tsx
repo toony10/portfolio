@@ -83,7 +83,7 @@ const Work = () => {
                                     rel="noopener noreferrer"
                                     className="mt-4 px-6 py-2 bg-gray-800 dark:bg-[#e7e7e7] text-white rounded-full shadow-md hover:bg-gray-900 hover:dark:bg-[#c5c5c5] dark:text-gray-900 transition-all flex gap-2 justify-center items-center"
                                 >
-                                    <MdLiveTv size={ 25 } /> View Live
+                                    <MdLiveTv size={ 25 } />Live
                                 </Link>
                                 { project.code && (
                                     <Link
@@ -101,7 +101,7 @@ const Work = () => {
                                     <span key={ techIndex } className="flex items-center justify-center text-gray-700 dark:text-[#f8f9fa] rounded-full text-sm font-medium w-9">
                                         <Tooltip>
                                             <TooltipTrigger asChild>
-                                                <Image src={ Tech.img } alt='ss' className='rounded-lg' />
+                                                <Image src={ Tech.img } alt='ss' className='rounded-md' />
                                             </TooltipTrigger>
                                             <TooltipContent>
                                                 <p>{ Tech.title }</p>
