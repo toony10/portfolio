@@ -60,7 +60,9 @@ const skillCategories = [
         color: 'bg-cyan-500/90',
         icon: FaCloud,
         skills: [
-            { name: 'Supabase', icon: assets.supabase },
+            { name: 'MySQL', icon: assets.mysql },
+            { name: 'PostgreSQL', icon: assets.postgres },
+            { name: 'Supabase', icon: assets.supabase }
         ],
     },
 ];

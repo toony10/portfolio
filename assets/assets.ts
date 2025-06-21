@@ -50,6 +50,8 @@ import zustand from './zustand.png';
 import react from './react.png';
 import google from './google.png';
 import emailjs from './emailjs.png';
+import mysql from './mysql.png';
+import postgres from './postgres.png';
 export const assets = {
   user_image,
   code_icon,
@@ -102,6 +104,8 @@ export const assets = {
   zustand,
   react,
   google,
+  mysql,
+  postgres,
 };
 
 export const workData = [
