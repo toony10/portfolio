@@ -143,7 +143,7 @@ const Skills = () => {
                                 <span className="mt-3 mb-4 font-bold text-base text-gray-800 dark:text-white text-center">{ category.title }</span>
                                 {/* Skills as pill badges */ }
                                 <div className="flex flex-wrap justify-center gap-3">
-                                    { category.skills.map((skill, idx) => (
+                                    { category.skills.map((skill) => (
                                         <motion.div
                                             key={ skill.name }
                                             whileHover={ { scale: 1.09, boxShadow: '0 2px 12px rgba(0,0,0,0.13)' } }
