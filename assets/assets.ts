@@ -1,6 +1,8 @@
 import * as user_image from './user-image.jpg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
+import handshake_icon from './handshake_icon.png';
+import handshake_icon_dark from './handshake_icon_dark.png';
 import edu_icon from './edu-icon.png';
 import edu_icon_dark from './edu-icon-dark.png';
 import skill_icon from './skill-icon.png';
@@ -36,9 +38,13 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import whatsApp from './WhatsApp.png';
 import linkedIn from './LinkedIn.png';
 import gitHub from './github.png';
+import html from './html.png';
+import css from './css.png';
+import javascript from './javascript.png';
 import next from './next.png';
 import typescript from './typescript.png';
 import tailwind from './talwind.png';
+import bootstrap from './bootstrap.png';
 import shadcn from './shadcn.png';
 import zustand from './zustand.png';
 import react from './react.png';
@@ -48,6 +54,8 @@ export const assets = {
   user_image,
   code_icon,
   code_icon_dark,
+  handshake_icon,
+  handshake_icon_dark,
   edu_icon,
   edu_icon_dark,
   skill_icon,
@@ -83,6 +91,17 @@ export const assets = {
   whatsApp,
   linkedIn,
   gitHub,
+  html,
+  css,
+  javascript,
+  next,
+  typescript,
+  tailwind,
+  bootstrap,
+  shadcn,
+  zustand,
+  react,
+  google,
 };
 
 export const workData = [
@@ -196,11 +215,16 @@ export const infoList = [
     link: ['The Egyptian E-Learning University (EELU)', 'https://www.eelu.edu.eg/'],
   },
   {
-    icon: assets.code_icon,
-    iconDark: assets.code_icon_dark,
-    title: 'Languages & Technologies',
+    icon: assets.handshake_icon,
+    iconDark: assets.handshake_icon_dark,
+    title: 'Personal Values & Work Ethic',
     description: [
-      'HTML, CSS, Bootstrap, Tailwind css, ShadCN, JavaScript, React Js, Next Js, zustand, SQL',
+      'Passion for continuous learning',
+      'Strong problem-solving mindset',
+      'Effective communication',
+      'Team player and collaborator',
+      'Attention to detail',
+      'Adaptability and flexibility',
     ],
   },
   {

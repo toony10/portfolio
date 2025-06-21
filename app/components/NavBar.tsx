@@ -6,6 +6,7 @@ import { assets } from '../../assets/assets'
 const listItems = [
     { name: 'Home', link: '#top' },
     { name: 'About Me', link: '#about' },
+    { name: 'Skills', link: '#skills' },
     { name: 'Experiences', link: '#experiences' },
     { name: 'My Work', link: '#work' },
     { name: 'Contact me', link: '#contact' }
