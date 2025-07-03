@@ -184,7 +184,7 @@ export const workData = [
         title: 'EmailJs',
       },
     ],
-    Live: 'https://hadhara-mfv5.vercel.app/',
+    Live: 'https://hadhara.vercel.app/',
     code: 'https://github.com/toony10/hadhara',
   },
   {
