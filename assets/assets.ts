@@ -52,6 +52,7 @@ import google from './google.png';
 import emailjs from './emailjs.png';
 import mysql from './mysql.png';
 import postgres from './postgres.png';
+import i18n from './i18n.png';
 export const assets = {
   user_image,
   code_icon,
@@ -106,14 +107,15 @@ export const assets = {
   google,
   mysql,
   postgres,
+  i18n,
 };
 
 export const workData = [
   {
-    title: 'Tona E-commerce (in Progress)',
+    title: 'Qutoof Organic',
     description:
-      'Tona E-commerce is a modern online fashion store designed to offer a seamless and stylish shopping experience for users interested in clothing and everything related to fashion. The platform is built using Next.js, providing server-side rendering and optimized performance, while Supabase handles authentication and database services to ensure secure and efficient data management. Tailwind CSS is used to create a responsive and visually appealing user interface, and TypeScript adds type safety and reliability to the codebase. For state management, the project utilizes Zustand, allowing for a simple yet powerful way to handle global state. Tona combines clean design with robust functionality, making it a reliable destination for users to explore and purchase the latest fashion trends online.',
-    bgImage: '/work-4.PNG',
+      'Qutoof Organic is an online store dedicated to offering high-quality natural products such as coffee, tea, and honey, with a focus on authenticity and customer satisfaction. The platform is built using Next.js, ensuring fast performance and a seamless user experience, while Tailwind CSS and ShadCN UI provide a modern, responsive, and visually appealing design. To enhance interactivity and engagement, Framer Motion is integrated for smooth animations and transitions. The result is a clean, user-friendly e-commerce website that delivers a simple yet enjoyable shopping experience with nationwide delivery support.',
+    bgImage: '/work-1.PNG',
     tech: [
       {
         img: next,
@@ -136,36 +138,42 @@ export const workData = [
         title: 'Zustand',
       },
     ],
-    Live: 'https://tona-ecommerce-kappa.vercel.app/',
-    code: 'https://github.com/toony10/tona-ecommerce',
+    Live: 'https://qutooforganic.com',
   },
   {
-    title: 'Travel Advisor',
+    title: 'Kayan',
     description:
-      "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
+      "A professional multilingual website for Kayan Contracting Company, specializing in HVAC systems, air conditioning installations, and fire safety systems. Built with Next.js, Tailwind CSS, and i18n internationalization, the website showcases the company's expertise in mechanical engineering services, project portfolio, and client testimonials. Features include service descriptions, contact forms, responsive design, and multi-language support for easy navigation across all devices.",
+    bgImage: '/work-2.PNG',
     tech: [
       {
-        img: react,
-        title: 'Reactjs',
+        img: next,
+        title: 'Next.js',
+      },
+      {
+        img: typescript,
+        title: 'TypeScript',
       },
       {
         img: tailwind,
         title: 'TailwindCss',
       },
       {
-        img: google,
-        title: 'Google Maps API',
+        img: i18n,
+        title: 'i18n',
+      },
+      {
+        img: shadcn,
+        title: 'Shadcn UI',
       },
     ],
-    bgImage: '/work-1.PNG',
-    Live: 'https://travele-advisor.vercel.app/',
-    code: 'https://github.com/toony10/Travele-advisor',
+    Live: 'https://kayan-six.vercel.app',
   },
   {
     title: 'Hadarah',
     description:
       'website about ancient Egyptian life and Pharaonic civilization using Next.js and Tailwind CSS. Designed for easy navigation and clear information presentation as a graduation project for the Faculty of Archaeology',
-    bgImage: '/work-2.PNG',
+    bgImage: '/work-3.PNG',
     tech: [
       {
         img: next,
@@ -188,6 +196,28 @@ export const workData = [
     code: 'https://github.com/toony10/hadhara',
   },
   {
+    title: 'Travel Advisor',
+    description:
+      "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
+    tech: [
+      {
+        img: react,
+        title: 'Reactjs',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+      {
+        img: google,
+        title: 'Google Maps API',
+      },
+    ],
+    bgImage: '/work-4.PNG',
+    Live: 'https://travele-advisor.vercel.app/',
+    code: 'https://github.com/toony10/Travele-advisor',
+  },
+  {
     title: 'Khazanty',
     description:
       'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
@@ -205,7 +235,7 @@ export const workData = [
         title: 'TailwindCss',
       },
     ],
-    bgImage: '/work-3.PNG',
+    bgImage: '/work-5.PNG',
     Live: 'https://www.khazantyksa.com/',
   },
 ];
