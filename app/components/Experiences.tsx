@@ -4,8 +4,15 @@ import SectionHeader from "./custom/SectionHeader";
 import { motion } from 'motion/react';
 const experiences = [
     {
+        title: "Front-end Developer at Inno Code",
+        date: "Jul 2025 - Present",
+        location: "Cairo",
+        description:
+            "Built and optimized responsive web interfaces using Next.js and Tailwind CSS, ensuring smooth user experience, Collaborated with back-end developers to integrate APIs and improve overall application performance. ",
+    },
+    {
         title: "Freelance React.js Developer",
-        date: "Aug 2022 - Present",
+        date: "Aug 2022 - Jul 2025",
         location: "Remote",
         description:
             "Built and maintained high-performance web apps with React.js and Next.js, delivering scalable solutions aligned with client needs. Enhanced performance by optimizing load times by 30% through techniques like code splitting and lazy loading.",
