@@ -167,7 +167,7 @@ export const workData = [
         title: 'Shadcn UI',
       },
     ],
-    Live: 'https://kayan-six.vercel.app',
+    Live: 'https://kayaan-eg.com',
   },
   {
     title: 'Hadarah',
