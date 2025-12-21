@@ -192,8 +192,7 @@ export const workData = [
         title: 'EmailJs',
       },
     ],
-    Live: 'https://hadhara.vercel.app/',
-    code: 'https://github.com/toony10/hadhara',
+    Live: 'https://hadhara.vercel.app/'
   },
   {
     title: 'Travel Advisor',
@@ -216,28 +215,7 @@ export const workData = [
     bgImage: '/work-4.PNG',
     Live: 'https://travele-advisor.vercel.app/',
     code: 'https://github.com/toony10/Travele-advisor',
-  },
-  {
-    title: 'Khazanty',
-    description:
-      'e-commerce website for a furniture store in Saudi Arabia using Next.js, Tailwind CSS and Email js for users emails',
-    tech: [
-      {
-        img: next,
-        title: 'Next.js',
-      },
-      {
-        img: typescript,
-        title: 'TypeScript',
-      },
-      {
-        img: tailwind,
-        title: 'TailwindCss',
-      },
-    ],
-    bgImage: '/work-5.PNG',
-    Live: 'https://www.khazantyksa.com/',
-  },
+  }
 ];
 
 export const infoList = [
