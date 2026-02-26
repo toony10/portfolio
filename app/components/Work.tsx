@@ -4,7 +4,6 @@ import Image from 'next/image'
 import SectionHeader from './custom/SectionHeader'
 import { workData } from '@/assets/assets'
 import { motion } from 'motion/react'
-import { FaGithub } from "react-icons/fa"
 import { MdLiveTv, MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md"
 
 import {
@@ -85,16 +84,6 @@ const Work = () => {
                                 >
                                     <MdLiveTv size={ 25 } />Live
                                 </Link>
-                                { project.code && (
-                                    <Link
-                                        href={ project.code }
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="mt-4 px-6 py-2 bg-gray-800 dark:bg-[#e7e7e7] text-white rounded-full shadow-md hover:bg-gray-900 hover:dark:bg-[#c5c5c5] dark:text-gray-900 transition-all flex gap-2 justify-center items-center"
-                                    >
-                                        <FaGithub size={ 25 } /> Code
-                                    </Link>
-                                ) }
                             </div>
                             <div className='mt-4 flex gap-4  px-2 py-1 rounded-full '>
                                 { project.tech.map((Tech, techIndex) => (

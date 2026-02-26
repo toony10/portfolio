@@ -115,7 +115,7 @@ export const workData = [
     title: 'Qutoof Organic',
     description:
       'Qutoof Organic is an online store dedicated to offering high-quality natural products such as coffee, tea, and honey, with a focus on authenticity and customer satisfaction. The platform is built using Next.js, ensuring fast performance and a seamless user experience, while Tailwind CSS and ShadCN UI provide a modern, responsive, and visually appealing design. To enhance interactivity and engagement, Framer Motion is integrated for smooth animations and transitions. The result is a clean, user-friendly e-commerce website that delivers a simple yet enjoyable shopping experience with nationwide delivery support.',
-    bgImage: '/work-1.PNG',
+    bgImage: '/qutoof.PNG',
     tech: [
       {
         img: next,
@@ -141,10 +141,39 @@ export const workData = [
     Live: 'https://qutooforganic.com',
   },
   {
+    title: 'Omlaty (Coming Soon)',
+    description:
+      'Comprehensive platform for coin collectors, featuring an online store, coin encyclopedia, community forum, blog, and academy. Building a modern, responsive and scalable UI using Next.js, Tailwind CSS, and ShadCN UI to ensure smooth navigation across multiple content-rich sections.',
+    bgImage: '/omlaty.png',
+    tech: [
+      {
+        img: next,
+        title: 'Next.js',
+      },
+      {
+        img: typescript,
+        title: 'TypeScript',
+      },
+      {
+        img: tailwind,
+        title: 'TailwindCss',
+      },
+      {
+        img: shadcn,
+        title: 'Shadcn UI',
+      },
+      {
+        img: zustand,
+        title: 'Zustand',
+      },
+    ],
+    Live: 'https://omlaty.vercel.app',
+  },
+  {
     title: 'Kayan',
     description:
       "A professional multilingual website for Kayan Contracting Company, specializing in HVAC systems, air conditioning installations, and fire safety systems. Built with Next.js, Tailwind CSS, and i18n internationalization, the website showcases the company's expertise in mechanical engineering services, project portfolio, and client testimonials. Features include service descriptions, contact forms, responsive design, and multi-language support for easy navigation across all devices.",
-    bgImage: '/work-2.PNG',
+    bgImage: '/kayan.PNG',
     tech: [
       {
         img: next,
@@ -173,7 +202,7 @@ export const workData = [
     title: 'Hadarah',
     description:
       'website about ancient Egyptian life and Pharaonic civilization using Next.js and Tailwind CSS. Designed for easy navigation and clear information presentation as a graduation project for the Faculty of Archaeology',
-    bgImage: '/work-3.PNG',
+    bgImage: '/hadarah.PNG',
     tech: [
       {
         img: next,
@@ -194,28 +223,6 @@ export const workData = [
     ],
     Live: 'https://hadhara.vercel.app/'
   },
-  {
-    title: 'Travel Advisor',
-    description:
-      "The Travel Advisor project is a web application built with React that helps users discover nearby restaurants, cafes, and hotels. It uses Google Maps API and geolocation services to determine the user's current location and display relevant places around them on an interactive map.",
-    tech: [
-      {
-        img: react,
-        title: 'Reactjs',
-      },
-      {
-        img: tailwind,
-        title: 'TailwindCss',
-      },
-      {
-        img: google,
-        title: 'Google Maps API',
-      },
-    ],
-    bgImage: '/work-4.PNG',
-    Live: 'https://travele-advisor.vercel.app/',
-    code: 'https://github.com/toony10/Travele-advisor',
-  }
 ];
 
 export const infoList = [
